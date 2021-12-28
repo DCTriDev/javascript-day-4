@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <!--    Bootstrap    -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <title>BT JS</title>
+</head>
+<body class="text-center py-5 bg-light container">
+    <div class="text-primary mb-5">
+        <h1>Bài Tập JS - Buổi 4</h1>
+    </div>
+
+    <!--    Bài Tập 1    -->
+    <div class="border border-primary rounded py-3 my-3">
+        <h2>Bài Tập 1</h2>
+        <h3>Xuất 3 Số Tăng Dần</h3>
+        <p>Nhập 3 số bất kỳ</p>
+        <input id="so-thu-nhat" placeholder="Số thứ nhất" type="number"><br><br>
+        <input id="so-thu-hai" placeholder="Số thứ hai" type="number"><br><br>
+        <input id="so-thu-ba" placeholder="Số thứ ba" type="number"><br><br>
+        <button class="btn btn-primary" id="nut-sap-xep">Xem Kết Quả</button>
+        <br><br>
+        <input id="ket-qua-sap-xep" placeholder="Kết Quả" readonly type="text">
+    </div>
+    <!--    Bài Tập 2    -->
+    <div class="border border-primary rounded py-3 my-3">
+        <h2>Bài Tập 2</h2>
+        <h3>Chào hỏi</h3>
+        <p>Người sử dụng</p>
+        <select id="nguoi-su-dung">
+            <option value="">Chọn người sử dụng</option>
+            <option value="B">Bố</option>
+            <option value="M">Mẹ</option>
+            <option value="A">Anh Trai</option>
+            <option value="E">Em Gái</option>
+        </select><br><br>
+        <button class="btn btn-primary" id="btn-chao-hoi">Bắt Đầu</button>
+        <br><br>
+        <p id="chao-hoi"></p>
+    </div>
+    <!--    Bài Tập 3-->
+    <div class="border border-primary rounded py-3 my-3">
+        <h2>Bài Tập 3</h2>
+        <h3>Đếm số chẵn và lẻ</h3>
+        <p>Nhập 3 số nguyên</p>
+        <input id="so-nguyen-thu-nhat" placeholder="Số nguyên thứ nhất" type="number"><br><br>
+        <input id="so-nguyen-thu-hai" placeholder="Số nguyên thứ hai" type="number"><br><br>
+        <input id="so-nguyen-thu-ba" placeholder="Số nguyên thứ ba" type="number"><br><br>
+        <button class="btn btn-primary" id="btn-tinh-chan-le">Xem Kết Quả</button>
+        <br><br>
+        <p>Số lượng số chẵn là</p>
+        <input id="so-chan" placeholder="Số lượng số chẵn" readonly type="text"><br><br>
+        <p>Số lượng số lẻ là</p>
+        <input id="so-le" placeholder="Số lượng số lẻ" readonly type="text">
+    </div>
+    <!--    Bài Tập 4-->
+    <div class="border border-primary rounded py-3 my-3">
+        <h2>Bài Tập 4</h2>
+        <h3>Kiểm Tra Tam Giác</h3>
+        <p>Mời nhập ba cạnh tam giác</p>
+        <input id="canh-thu-nhat" placeholder="Cạnh thứ nhất" type="number"><br><br>
+        <input id="canh-thu-hai" placeholder="Cạnh thứ hai" type="number"><br><br>
+        <input id="canh-thu-ba" placeholder="Cạnh thứ ba" type="number"><br><br>
+
+        <button class="btn btn-primary" id="btn-tam-giac">Xem Kết Quả</button>
+        <br>
+        <br>
+        <p id="ket-qua-tam-giac"></p>
+    </div>
+    <!--    Bài Tập Nâng Cao-->
+    <div class="text-primary m-5">
+        <h1>Bài Tập Nâng Cao</h1>
+    </div>
+    <!--    Bài Tập Nâng Cao 1   -->
+    <div class="border border-primary rounded py-3 my-3">
+        <h2>Bài Tập Nâng Cao 1</h2>
+        <h3>Ngày hôm trước - Ngày hôm sau</h3>
+        <p>Nhập ngày tháng năm</p>
+        <input id="ngay" placeholder="Ngày" type="text"><br><br>
+        <input id="thang" placeholder="Tháng" type="text"><br><br>
+        <input id="nam" placeholder="Năm" type="text"><br><br>
+        <button class="btn btn-primary" id="btn-tinh-ngay">Xem Kết Quả</button>
+        <br><br>
+        <p>Ngày hôm trước</p>
+        <input id="hom-truoc" placeholder="Hôm Trước" type="text"><br><br>
+        <p>Ngày hôm sau</p>
+        <input id="hom-sau" placeholder="Hôm Sau" type="text"><br><br>
+    </div>
+    <!--    Bài Tập Nâng Cao 2   -->
+    <div class="border border-primary rounded py-3 my-3">
+        <h2>Bài Tập Nâng Cao 2</h2>
+        <h3>Tìm số ngày trong tháng</h3>
+        <p>Nhập tháng năm</p>
+        <input id="thang-bt2" placeholder="Tháng" type="text"><br><br>
+        <input id="nam-bt2" placeholder="Năm" type="text"><br><br>
+        <button class="btn btn-primary" id="btn-tinh-ngay-bt2">Xem Kết Quả</button>
+        <br><br>
+        <p>Số ngày trong tháng</p>
+        <input id="so-ngay-trong-thang" placeholder="Số Ngày Trong Tháng" type="text"><br><br>
+    </div>
+    <!--    Bài Tập Nâng Cao 3   -->
+    <div class="border border-primary rounded py-3 my-3">
+        <h2>Bài Tập Nâng Cao 3</h2>
+        <h3>Đọc số có 3 chữ số</h3>
+        <p>Nhập số nguyên có 3 chữ số</p>
+        <input id="so-can-doc" placeholder="Số Cần Đọc" type="text"><br><br>
+        <button class="btn btn-primary" id="btn-doc-so">Xem Kết Quả</button>
+        <br><br>
+        <p id="doc-so"></p>
+    </div>
+    <!--    Bài Tập Nâng Cao 4   -->
+    <div class="border border-primary rounded py-3 my-3">
+        <h2>Bài Tập Nâng Cao 4</h2>
+        <h3>Sinh Viên Xa Trường Nhất</h3>
+        <p>Tên 3 sinh viên</p>
+        <input id="ten-sv1" type="text" placeholder="Tên SV 1">
+        <input id="ten-sv2" type="text" placeholder="Tên SV 2">
+        <input id="ten-sv3" type="text" placeholder="Tên SV 3">
+        <p>Mời nhập toạ độ trường và toạ độ 3 sinh viên</p>
+        <input id="x-truong" placeholder="Toạ độ x của trường" type="number">
+        <input id="y-truong" placeholder="Toạ độ y của trường" type="number"><br><br>
+        <input id="x-sv1" placeholder="Toạ độ x của sv1" type="number">
+        <input id="y-sv1" placeholder="Toạ độ y của sv1" type="number"><br><br>
+        <input id="x-sv2" placeholder="Toạ độ x của sv2" type="number">
+        <input id="y-sv2" placeholder="Toạ độ y của sv2" type="number"><br><br>
+        <input id="x-sv3" placeholder="Toạ độ x của sv3" type="number">
+        <input id="y-sv3" placeholder="Toạ độ y của sv3" type="number"><br><br>
+
+        <button class="btn btn-primary" id="btn-sv">Xem Kết Quả</button>
+        <br>
+        <br>
+        <p id="xuat-ten-sv"></p>
+    </div>
+
+
+    <!--    =============================Javascript=======================    -->
+    <!--    jQuery    -->
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <!--    Boostrap    -->
+    <script src="/js/bootstrap.min.js"></script>
+    <!--    Custom script    -->
+    <script src="/js/script.js"></script>
+</body>
+</html>
