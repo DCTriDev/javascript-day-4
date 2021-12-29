@@ -16,7 +16,7 @@ nutSapXep.addEventListener('click', function () {
             [soThuNhat, soThuBa] = [soThuBa, soThuNhat];
             [soThuHai, soThuBa] = [soThuBa, soThuHai];
         }
-        if (soThuHai > soThuBa) {
+        else if (soThuHai > soThuBa) {
             [soThuHai, soThuBa] = [soThuBa, soThuHai];
         }
     } else {
@@ -24,7 +24,7 @@ nutSapXep.addEventListener('click', function () {
             [soThuNhat, soThuBa] = [soThuBa, soThuNhat];
             [soThuHai, soThuBa] = [soThuBa, soThuHai];
         }
-        if (soThuHai > soThuBa) {
+        else if (soThuHai > soThuBa) {
             [soThuHai, soThuBa] = [soThuBa, soThuHai]
         }
     }
@@ -54,7 +54,6 @@ btnChaoHoi.addEventListener('click', function () {
             break
         default:
             chaoHoi = "Vui lòng chọn một!!!"
-            break
     }
     chaoHoiEl.innerText = chaoHoi
 })
