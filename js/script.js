@@ -1,4 +1,4 @@
-//Bai tap 1: Sap xeo tang dan
+//Bai tap 1: Sap xep tang dan
 let soThuNhatEl = document.querySelector('#so-thu-nhat')
 let soThuHaiEl = document.querySelector('#so-thu-hai')
 let soThuBaEl = document.querySelector('#so-thu-ba')
@@ -97,19 +97,21 @@ btnTamGiac.addEventListener('click', function () {
     let canhThuBa = canhThuBaEl.value * 1
     let ketQuaTamGiac
 
-    if (canhThuNhat == canhThuHai && canhThuNhat == canhThuBa) {
-        ketQuaTamGiac = 'Tam giác đều'
-    } else if (canhThuNhat == canhThuHai || canhThuNhat == canhThuBa || canhThuHai == canhThuBa) {
-        if (canhThuNhat == Math.sqrt((Math.pow(canhThuHai, 2)) + (Math.pow(canhThuBa, 2))) || canhThuHai == Math.sqrt((Math.pow(canhThuNhat, 2)) + (Math.pow(canhThuBa, 2))) || canhThuBa == Math.sqrt((Math.pow(canhThuHai, 2)) + (Math.pow(canhThuNhat, 2)))) {
-            ketQuaTamGiac = 'Tam giác vuông cân'
-        } else {
-            ketQuaTamGiac = 'Tam giác cân'
-        }
+    if(canhThuNhat >0 && canhThuHai >0 && canhThuBa >0) {
+        if (canhThuNhat == canhThuHai && canhThuNhat == canhThuBa) {
+            ketQuaTamGiac = 'Tam giác đều'
+        } else if (canhThuNhat == canhThuHai || canhThuNhat == canhThuBa || canhThuHai == canhThuBa) {
+            if (canhThuNhat == Math.sqrt((Math.pow(canhThuHai, 2)) + (Math.pow(canhThuBa, 2))) || canhThuHai == Math.sqrt((Math.pow(canhThuNhat, 2)) + (Math.pow(canhThuBa, 2))) || canhThuBa == Math.sqrt((Math.pow(canhThuHai, 2)) + (Math.pow(canhThuNhat, 2)))) {
+                ketQuaTamGiac = 'Tam giác vuông cân'
+            } else {
+                ketQuaTamGiac = 'Tam giác cân'
+            }
 
-    } else if (canhThuNhat == Math.sqrt((Math.pow(canhThuHai, 2)) + (Math.pow(canhThuBa, 2))) || canhThuHai == Math.sqrt((Math.pow(canhThuNhat, 2)) + (Math.pow(canhThuBa, 2))) || canhThuBa == Math.sqrt((Math.pow(canhThuHai, 2)) + (Math.pow(canhThuNhat, 2)))) {
-        ketQuaTamGiac = 'Tam giác vuông'
-    } else ketQuaTamGiac = 'Tam giác không đều, không cân, không vuông'
-    ketQuaTamGiacEl.innerHTML = ketQuaTamGiac
+        } else if (canhThuNhat == Math.sqrt((Math.pow(canhThuHai, 2)) + (Math.pow(canhThuBa, 2))) || canhThuHai == Math.sqrt((Math.pow(canhThuNhat, 2)) + (Math.pow(canhThuBa, 2))) || canhThuBa == Math.sqrt((Math.pow(canhThuHai, 2)) + (Math.pow(canhThuNhat, 2)))) {
+            ketQuaTamGiac = 'Tam giác vuông'
+        } else ketQuaTamGiac = 'Tam giác không đều, không cân, không vuông'
+        ketQuaTamGiacEl.innerHTML = ketQuaTamGiac
+    }else alert("Vui lòng nhập lại giá trị các cạnh!")
 })
 
 //Bài tập Nâng cao
@@ -166,9 +168,7 @@ btnTinhNgay.addEventListener('click', function () {
 
 })
 function KiemTraNamNhuan(namNaoDo) {
-    if((namNaoDo % 400 == 0) || (namNaoDo % 4 == 0 && namNaoDo % 100 != 0))
-        return true
-    else return false
+    return (namNaoDo % 400 == 0) || (namNaoDo % 4 == 0 && namNaoDo % 100 != 0);
 }
 
 //Bai tap 2 Nang cao Tinh ngay trong thang
@@ -246,6 +246,7 @@ btnDocSo.addEventListener('click', function () {
             break
         case 5:
             docSo += "Năm Mươi "
+            break
         case 6:
             docSo += "Sáu Mươi ";
             break
